@@ -1,3 +1,4 @@
+package com.facebook;
 import java.io.*;
 import java.util.*;
 public class ElementPairSum{
@@ -33,30 +34,3 @@ private static int[] array;
 		System.out.println("Element not found");
 	}
 }
-	/*public static void findElements(int a[], int sum){
-	    int key,pair;
-	    for(int i = 0; i < a.length;i++){
-	       key = sum - a[i];
-	       if(key < a[i])
-	            break;
-	       pair = search(a,key,i + 1, a.length - 1);
-	       if(pair != -1){
-	            System.out.println("Elements are " + a[i] + " & " + pair);
-	            return;
-	       }
-	    }
-	    System.out.println("No such elements found");
-	}
-	
-	public static int search(int[] a, int key, int low, int high){
-	    if(low > high)
-	        return -1;
-	    int mid = (high + low)/2;
-	    if(a[mid] == key)
-	        return a[mid];
-	    if(a[mid] > key)
-	        return(search(a,key,low,mid - 1));
-	   else
-	       return(search(a, key, mid + 1, high));
-	}
-}*/
